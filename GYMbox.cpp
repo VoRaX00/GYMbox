@@ -5,9 +5,6 @@
 using namespace sf;
 using namespace std;
 
-
-
-
 void updateWalkImage(Texture& texture, Sprite& sprite, int& numImage, int& time, RenderWindow& window){
     if(time<250){
         time++;
@@ -19,7 +16,7 @@ void updateWalkImage(Texture& texture, Sprite& sprite, int& numImage, int& time,
         }
 
         time = 1;
-        std::string path = "C:\\Users\\nikit\\CLionProjects\\GYMbox\\images\\walk\\walk" + std::to_string(numImage)+".png";
+        std::string path = "images/walk/walk" + std::to_string(numImage)+".png";
         if(!texture.loadFromFile(path)) {
             window.close();
         }
@@ -39,7 +36,7 @@ bool loadImage(sf::Texture &texture, std::string path){
 }
 
 void game(){
-    const std::string PATH_WALK1 = R"(images\walk\walk1.png)";
+    const std::string PATH_WALK1 =  R"(images\walk\walk1.png)";
     const std::string DEFAULT_PATH_BUTTON = R"(images\button.png)";
 
     sf::RenderWindow window(sf::VideoMode(800, 600), "GYM!!!");//Создание окна 800*600
