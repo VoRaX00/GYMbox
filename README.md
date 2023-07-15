@@ -24,4 +24,4 @@
      
      3.2 Зайти в раздел Build, Execution, Deployment и выбрать вкладку CMake
      
-     3.3 В CMake options вписать следующую строку: -DMY_PATH=Your_path_to_the_CLionProjects_folder (Пример: -DMY_PATH=C:/Users/nikit/CLionProjects)
+     3.3 В CMake options вписать следующую строку: -DMY_PATH=YOUR_PATH_TO_THE_CLIONPROJECTS_FOLDER (Пример: -DMY_PATH=C:/Users/nikit/CLionProjects)
