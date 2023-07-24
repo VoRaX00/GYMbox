@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\nikit\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\nikit\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\nikit\CLionProjects\GYMbox
+CMAKE_SOURCE_DIR = C:\Users\glebm\CLionProjects\GYMbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\nikit\CLionProjects\GYMbox\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\nikit\CLionProjects\GYMbox\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\nikit\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\nikit\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles C:\Users\nikit\CLionProjects\GYMbox\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\nikit\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -127,6 +127,30 @@ GYMbox: cmake_check_build_system
 GYMbox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/build
 .PHONY : GYMbox/fast
+
+ButtonPlayer.obj: ButtonPlayer.cpp.obj
+.PHONY : ButtonPlayer.obj
+
+# target to build an object file
+ButtonPlayer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj
+.PHONY : ButtonPlayer.cpp.obj
+
+ButtonPlayer.i: ButtonPlayer.cpp.i
+.PHONY : ButtonPlayer.i
+
+# target to preprocess a source file
+ButtonPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.i
+.PHONY : ButtonPlayer.cpp.i
+
+ButtonPlayer.s: ButtonPlayer.cpp.s
+.PHONY : ButtonPlayer.s
+
+# target to generate assembly for a file
+ButtonPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.s
+.PHONY : ButtonPlayer.cpp.s
 
 DynamicObject.obj: DynamicObject.cpp.obj
 .PHONY : DynamicObject.obj
@@ -175,6 +199,30 @@ GYMbox.s: GYMbox.cpp.s
 GYMbox.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/GYMbox.cpp.s
 .PHONY : GYMbox.cpp.s
+
+Game.obj: Game.cpp.obj
+.PHONY : Game.obj
+
+# target to build an object file
+Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Game.cpp.obj
+.PHONY : Game.cpp.obj
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 Player.obj: Player.cpp.obj
 .PHONY : Player.obj
@@ -233,12 +281,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GYMbox
+	@echo ... ButtonPlayer.obj
+	@echo ... ButtonPlayer.i
+	@echo ... ButtonPlayer.s
 	@echo ... DynamicObject.obj
 	@echo ... DynamicObject.i
 	@echo ... DynamicObject.s
 	@echo ... GYMbox.obj
 	@echo ... GYMbox.i
 	@echo ... GYMbox.s
+	@echo ... Game.obj
+	@echo ... Game.i
+	@echo ... Game.s
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s

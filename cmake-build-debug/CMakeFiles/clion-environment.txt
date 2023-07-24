@@ -1,4 +1,4 @@
-ToolSet: w64 9.0 (local)@C:\Users\nikit\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw
+ToolSet: w64 9.0 (local)@C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9161.40\bin\mingw
 Options: 
 
-Options:-DMY_PATH=C:/Users/nikit/CLionProjects
+Options:-DMY_PATH=C:\Users\glebm\CLionProjects\GYMbox

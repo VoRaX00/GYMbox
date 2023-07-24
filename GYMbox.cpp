@@ -1,9 +1,62 @@
-// Created by nikit on 14.06.2023.
-//
 #include "GYMbox.h"
 
 using namespace sf;
 using namespace std;
+
+void GYMbox::initVar() {
+    this->window = nullptr;
+}
+
+void GYMbox::initWorld() {
+    this->videoMode.height = 1920;
+    this->videoMode.width = 1080;
+    this->window = new sf::RenderWindow (sf::VideoMode(this->videoMode.width, this->videoMode.height), "GYMbox/build_1.0", sf::Style::Titlebar | sf::Style::Close);
+    this->window->setFramerateLimit(90);
+    this->window->setVerticalSyncEnabled(true);
+}
+
+void GYMbox::initPlayer() {
+    //this->buttonPlayer = new ButtonPlayer();
+}
+
+GYMbox::GYMbox() {
+    this->initVar();
+    this->initWorld();
+    this->initPlayer();
+}
+
+GYMbox::~GYMbox() {
+    delete this->window;
+    delete this->buttonPlayer;
+}
+
+void GYMbox::pollEvents() {
+    while(this->window->pollEvent(this->event)){
+        switch (this->event.type) {
+            case sf::Event::Closed:
+                this->window->close();
+                break;
+            case sf::Event::KeyPressed:
+                if (this->event.key.code == sf::Keyboard::Escape)
+                    this->window->close();
+                break;
+        }
+    }
+}
+
+void GYMbox::update() {
+    this->pollEvents();
+}
+
+void GYMbox::render() {
+    this->window->clear();
+    this->buttonPlayer->render(*this->window);
+    this->window->display();
+}
+
+const bool GYMbox::running() const{
+    return this->window->isOpen();
+}
 
 void updateWalkImage(Texture& texture, Sprite& sprite, int& numImage, int& time, RenderWindow& window){
     if(time<250){
@@ -39,7 +92,7 @@ void game(){
     const std::string PATH_WALK1 =  R"(images\walk\walk1.png)";
     const std::string DEFAULT_PATH_BUTTON = R"(images\button.png)";
 
-    sf::RenderWindow window(sf::VideoMode(800, 600), "GYM!!!");//Создание окна 800*600
+    sf::RenderWindow window(sf::VideoMode(1080, 1920), "GYMbox/build_1.0", sf::Style::Titlebar | sf::Style::Close);
     bool isLeft = false; //проверка повёрнут ли персонаж на лево
 
     sf::Texture texturePerson; // текстура персонажа
@@ -97,12 +150,13 @@ void game(){
                         button->onClicked(event->mouseButton.x, event->mouseButton.y);
                     }
                     break;
-
+                case sf::Event::KeyPressed:
+                    if (event->key.code == sf::Keyboard::Escape)
+                        window.close();
                 default:
                     break;
             }
         }
-
         window.clear();
         window.draw(person);
         window.draw(*button);

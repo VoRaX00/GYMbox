@@ -1,10 +1,6 @@
-//
-// Created by nikit on 06.06.2023.
-//
-#include <SFML/Graphics.hpp>
+#pragma once
 
-#ifndef GYMBOX_BUTTON_H
-#define GYMBOX_BUTTON_H
+#include <SFML/Graphics.hpp>
 
 template <class T>
 class Button : public sf::Sprite{
@@ -38,6 +34,3 @@ private:
 public:
     sf::Texture m_texture;
 };
-
-
-#endif //GYMBOX_BUTTON_H
