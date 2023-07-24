@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GYMbox.dir/ButtStrong.cpp.obj"
+  "CMakeFiles/GYMbox.dir/ButtStrong.cpp.obj.d"
   "CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj"
   "CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj.d"
   "CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj"

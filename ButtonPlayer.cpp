@@ -4,6 +4,9 @@ ButtonPlayer::ButtonPlayer()
 {
     this->initTexture();
     this->initSprite();
+    points = 0;
+    this->hpMax = 100;
+    this->hp = this->hpMax;
 }
 
 ButtonPlayer::~ButtonPlayer() {
@@ -11,11 +14,11 @@ ButtonPlayer::~ButtonPlayer() {
 }
 
 void ButtonPlayer::initSprite() {
-    this->sprite.setTexture(this->mainTex );
+    this->sprite.setTexture(this->mainTex);
 }
 
 void ButtonPlayer::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(C:\Users\glebm\CLionProjects\GYMbox\images\GG1.png)")) {
+    if (!this->mainTex.loadFromFile(R"(C:\Users\glebm\CLionProjects\GYMbox\images\G1.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }
@@ -35,6 +38,7 @@ void ButtonPlayer::handleClickEvent(sf::Event event, const sf::RenderWindow& win
 
             if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "Button clicked!" << std::endl;
+                points++;
             }
         }
     }
@@ -46,4 +50,14 @@ void ButtonPlayer::setPosition(float x, float y) {
 
 void ButtonPlayer::setPosition(const sf::Vector2f& position) {
     this->sprite.setPosition(position);
+}
+
+const int & ButtonPlayer::getHp() const
+{
+    return this->hp;
+}
+
+const int & ButtonPlayer::getHpMax() const
+{
+    return this->hpMax;
 }

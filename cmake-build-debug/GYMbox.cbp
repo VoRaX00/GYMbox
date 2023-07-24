@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtStrong.cpp">
+			<Option target="GYMbox"/>
+		</Unit>
+		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtStrong.h">
+			<Option target="GYMbox"/>
+		</Unit>
 		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Button.h">
 			<Option target="GYMbox"/>
 		</Unit>

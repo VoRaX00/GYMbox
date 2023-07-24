@@ -267,4 +267,7 @@ CMakeFiles/GYMbox.dir/main.cpp.obj: \
  C:/Users/glebm/CLIONP~1/GYMbox/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/Glsl.inl \
  C:/Users/glebm/CLIONP~1/GYMbox/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/Sprite.hpp \
  C:/Users/glebm/CLIONP~1/GYMbox/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/Text.hpp \
- C:/Users/glebm/CLIONP~1/GYMbox/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/VertexBuffer.hpp
+ C:/Users/glebm/CLIONP~1/GYMbox/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/VertexBuffer.hpp \
+ C:\Users\glebm\CLionProjects\GYMbox\ButtStrong.h \
+ C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+ C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9161.40/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
