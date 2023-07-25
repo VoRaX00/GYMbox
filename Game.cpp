@@ -50,7 +50,7 @@ void Game::update() {
             this->window->close();
         }
 
-        this->player->handleClickEvent(event, *this->window);
+        playerClick = this->player->handleClickEvent(event, *this->window);
 
         if (this->player->points >= this->strong->price){
             if(this->strong->handleClickEvent(event, *this->window)){
@@ -66,13 +66,16 @@ void Game::update() {
 }
 
 void Game::render() {
-    this->window->clear();
-    this->renderWorld();
-    this->player->render(*this->window);
-    this->strong->render(*this->window);
-    this->renderGUI();
-    this->window->display();
+    if(playerClick){
+        player->resetTexturePressed();
+        renderDefault();
+        sf::sleep(sf::seconds(0.1));
+        player->resetTextureReleased();
+    }
+    renderDefault();
 }
+
+
 
 void Game::initWorld() {
     if(!this->worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
@@ -135,4 +138,13 @@ void Game::renderGUI()
     this->window->draw(this->strongText);
     this->window->draw(this->playerHpBarBack);
     this->window->draw(this->playerHpBar);
+}
+
+void Game::renderDefault() {
+    this->window->clear();
+    this->renderWorld();
+    this->player->render(*this->window);
+    this->strong->render(*this->window);
+    this->renderGUI();
+    this->window->display();
 }

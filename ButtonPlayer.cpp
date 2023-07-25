@@ -30,7 +30,7 @@ void ButtonPlayer::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-void ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
+bool ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -38,16 +38,17 @@ void ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
             if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "Button clicked!" << std::endl;
                 points+=power;
-
+                return true;
                 //Разгибание и сгибание руки
-                sprite.setTexture(pressedTex);
-                window.draw(sprite);
-                window.display();
-                sf::sleep(sf::seconds(0.1f));
-                sprite.setTexture(mainTex);
+//                sprite.setTexture(pressedTex);
+//                window.draw(sprite);
+//                window.display();
+//                sf::sleep(sf::seconds(0.1f));
+//                sprite.setTexture(mainTex);
             }
         }
     }
+    return false;
 }
 
 const int & ButtonPlayer::getHp() const
@@ -58,4 +59,12 @@ const int & ButtonPlayer::getHp() const
 const int & ButtonPlayer::getHpMax() const
 {
     return this->hpMax;
+}
+
+void ButtonPlayer::resetTexturePressed() {
+    sprite.setTexture(pressedTex);
+}
+
+void ButtonPlayer::resetTextureReleased() {
+    sprite.setTexture(mainTex);
 }

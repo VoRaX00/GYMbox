@@ -13,6 +13,8 @@ private:
     ButtonPlayer* player;
     ButtonStrong* strong;
 
+    bool playerClick = false;
+
     sf::Font font;
     sf::Text pointText;
     sf::Text strongText;
@@ -26,6 +28,7 @@ private:
     void initWorld();
     void initGUI();
     void initSystems();
+    void renderDefault();
 
 public:
     unsigned multiplier;
