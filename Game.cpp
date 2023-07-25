@@ -90,7 +90,7 @@ void Game::initGUI()
 
     this->playerHpBar.setSize(sf::Vector2f(1800.f, 25.f));
     this->playerHpBar.setFillColor(sf::Color::Yellow);
-    this->playerHpBar.setPosition(sf::Vector2f(0.f, 980.f));
+    this->playerHpBar.setPosition(sf::Vector2f(0.f, 970.f));
 
     this->playerHpBarBack = this->playerHpBar;
     this->playerHpBarBack.setFillColor(sf::Color(25, 25, 25, 200));
@@ -99,7 +99,7 @@ void Game::initGUI()
 void Game::initSystems()
 {
     this->points = 0;
-    this->multiplier = 0;
+    this->multiplier = 150;
 }
 
 void Game::updateGUI()

@@ -18,7 +18,11 @@ void ButtonPlayer::initSprite() {
 }
 
 void ButtonPlayer::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(C:\Users\glebm\CLionProjects\GYMbox\images\G1.png)")) {
+    if (!this->mainTex.loadFromFile(R"(images\G1.png)")) {
+        std::cout << "ERROR: Could not load main texture" << std::endl;
+    }
+
+    if (!this->pressedTex.loadFromFile(R"(images\G2.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }
@@ -39,6 +43,11 @@ void ButtonPlayer::handleClickEvent(sf::Event event, const sf::RenderWindow& win
             if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "Button clicked!" << std::endl;
                 points++;
+
+                if(points%2==0){
+                    this->sprite.setTexture(this->mainTex);
+                }
+                else this->sprite.setTexture(this->pressedTex);
             }
         }
     }
