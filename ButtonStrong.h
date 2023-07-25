@@ -1,22 +1,16 @@
 #pragma once
 
 #include <iostream>
-#include <SFML/Graphics.hpp>
-#include <SFML/System.hpp>
+#include "ButtonObject.h"
 
-class ButtonStrong{
+class ButtonStrong : ButtonObject{
 private:
-    sf::Sprite sprite;
-    sf::Texture mainTex;
-    void initSprite();
-    void initTexture();
+    void initTexture() override;
 public:
     ButtonStrong();
     ~ButtonStrong();
-    void update();
-    void render(sf::RenderTarget& target);
+    void update() override;
+    void render(sf::RenderTarget& target) override;
     bool handleClickEvent(sf::Event event, const sf::RenderWindow& window);
-    void setPosition(float x, float y);
-    void setPosition(const sf::Vector2f& position);
     unsigned price;
 };

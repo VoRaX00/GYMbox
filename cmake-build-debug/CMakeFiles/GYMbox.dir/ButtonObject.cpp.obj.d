@@ -1,14 +1,21 @@
-CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: \
- C:\Users\Alex\CLionProjects\GYMbox\ButtonPlayer.cpp \
- C:\Users\Alex\CLionProjects\GYMbox\ButtonPlayer.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
+CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj: \
+ C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.cpp \
+ C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.h \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Window.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Config.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Clock.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Export.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Time.hpp \
+ C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Err.hpp \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ios \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/memoryfwd.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h \
@@ -146,17 +153,6 @@ CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
- C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.h \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Window.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Config.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Clock.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Export.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Time.hpp \
- C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/Err.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/FileInputStream.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/InputStream.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System/NonCopyable.hpp \

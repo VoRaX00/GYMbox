@@ -10,13 +10,7 @@ ButtonPlayer::ButtonPlayer()
     this->hp = this->hpMax;
 }
 
-ButtonPlayer::~ButtonPlayer() {
-
-}
-
-void ButtonPlayer::initSprite() {
-    this->sprite.setTexture(this->mainTex);
-}
+ButtonPlayer::~ButtonPlayer() = default;
 
 void ButtonPlayer::initTexture() {
     if (!this->mainTex.loadFromFile(R"(images\G1.png)")) {
@@ -45,22 +39,15 @@ void ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
                 std::cout << "Button clicked!" << std::endl;
                 points+=power;
 
+                //Разгибание и сгибание руки
                 sprite.setTexture(pressedTex);
                 window.draw(sprite);
                 window.display();
-                sf::sleep(sf::seconds(0.1));
+                sf::sleep(sf::seconds(1));
                 sprite.setTexture(mainTex);
             }
         }
     }
-}
-
-void ButtonPlayer::setPosition(float x, float y) {
-    this->sprite.setPosition(x, y);
-}
-
-void ButtonPlayer::setPosition(const sf::Vector2f& position) {
-    this->sprite.setPosition(position);
 }
 
 const int & ButtonPlayer::getHp() const
