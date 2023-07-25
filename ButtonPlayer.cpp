@@ -39,24 +39,18 @@ bool ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
                 std::cout << "Button clicked!" << std::endl;
                 points+=power;
                 return true;
-                //Разгибание и сгибание руки
-//                sprite.setTexture(pressedTex);
-//                window.draw(sprite);
-//                window.display();
-//                sf::sleep(sf::seconds(0.1f));
-//                sprite.setTexture(mainTex);
             }
         }
     }
     return false;
 }
 
-const int & ButtonPlayer::getHp() const
+const int& ButtonPlayer::getHp() const
 {
     return this->hp;
 }
 
-const int & ButtonPlayer::getHpMax() const
+const int& ButtonPlayer::getHpMax() const
 {
     return this->hpMax;
 }

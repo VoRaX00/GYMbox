@@ -200,54 +200,6 @@ ButtonStrong.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonStrong.cpp.s
 .PHONY : ButtonStrong.cpp.s
 
-DynamicObject.obj: DynamicObject.cpp.obj
-.PHONY : DynamicObject.obj
-
-# target to build an object file
-DynamicObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj
-.PHONY : DynamicObject.cpp.obj
-
-DynamicObject.i: DynamicObject.cpp.i
-.PHONY : DynamicObject.i
-
-# target to preprocess a source file
-DynamicObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/DynamicObject.cpp.i
-.PHONY : DynamicObject.cpp.i
-
-DynamicObject.s: DynamicObject.cpp.s
-.PHONY : DynamicObject.s
-
-# target to generate assembly for a file
-DynamicObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/DynamicObject.cpp.s
-.PHONY : DynamicObject.cpp.s
-
-GYMbox.obj: GYMbox.cpp.obj
-.PHONY : GYMbox.obj
-
-# target to build an object file
-GYMbox.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/GYMbox.cpp.obj
-.PHONY : GYMbox.cpp.obj
-
-GYMbox.i: GYMbox.cpp.i
-.PHONY : GYMbox.i
-
-# target to preprocess a source file
-GYMbox.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/GYMbox.cpp.i
-.PHONY : GYMbox.cpp.i
-
-GYMbox.s: GYMbox.cpp.s
-.PHONY : GYMbox.s
-
-# target to generate assembly for a file
-GYMbox.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/GYMbox.cpp.s
-.PHONY : GYMbox.cpp.s
-
 Game.obj: Game.cpp.obj
 .PHONY : Game.obj
 
@@ -271,30 +223,6 @@ Game.s: Game.cpp.s
 Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Game.cpp.s
 .PHONY : Game.cpp.s
-
-Player.obj: Player.cpp.obj
-.PHONY : Player.obj
-
-# target to build an object file
-Player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Player.cpp.obj
-.PHONY : Player.cpp.obj
-
-Player.i: Player.cpp.i
-.PHONY : Player.i
-
-# target to preprocess a source file
-Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Player.cpp.i
-.PHONY : Player.cpp.i
-
-Player.s: Player.cpp.s
-.PHONY : Player.s
-
-# target to generate assembly for a file
-Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/Player.cpp.s
-.PHONY : Player.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -338,18 +266,9 @@ help:
 	@echo ... ButtonStrong.obj
 	@echo ... ButtonStrong.i
 	@echo ... ButtonStrong.s
-	@echo ... DynamicObject.obj
-	@echo ... DynamicObject.i
-	@echo ... DynamicObject.s
-	@echo ... GYMbox.obj
-	@echo ... GYMbox.i
-	@echo ... GYMbox.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
-	@echo ... Player.obj
-	@echo ... Player.i
-	@echo ... Player.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

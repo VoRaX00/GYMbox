@@ -83,56 +83,11 @@ CMakeFiles/GYMbox.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GYMbox.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alex\CLionProjects\GYMbox\main.cpp -o CMakeFiles\GYMbox.dir\main.cpp.s
 
-CMakeFiles/GYMbox.dir/GYMbox.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
-CMakeFiles/GYMbox.dir/GYMbox.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
-CMakeFiles/GYMbox.dir/GYMbox.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/GYMbox.cpp
-CMakeFiles/GYMbox.dir/GYMbox.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GYMbox.dir/GYMbox.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/GYMbox.cpp.obj -MF CMakeFiles\GYMbox.dir\GYMbox.cpp.obj.d -o CMakeFiles\GYMbox.dir\GYMbox.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\GYMbox.cpp
-
-CMakeFiles/GYMbox.dir/GYMbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GYMbox.dir/GYMbox.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alex\CLionProjects\GYMbox\GYMbox.cpp > CMakeFiles\GYMbox.dir\GYMbox.cpp.i
-
-CMakeFiles/GYMbox.dir/GYMbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GYMbox.dir/GYMbox.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alex\CLionProjects\GYMbox\GYMbox.cpp -o CMakeFiles\GYMbox.dir\GYMbox.cpp.s
-
-CMakeFiles/GYMbox.dir/Player.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
-CMakeFiles/GYMbox.dir/Player.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
-CMakeFiles/GYMbox.dir/Player.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/Player.cpp
-CMakeFiles/GYMbox.dir/Player.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GYMbox.dir/Player.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/Player.cpp.obj -MF CMakeFiles\GYMbox.dir\Player.cpp.obj.d -o CMakeFiles\GYMbox.dir\Player.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\Player.cpp
-
-CMakeFiles/GYMbox.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GYMbox.dir/Player.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alex\CLionProjects\GYMbox\Player.cpp > CMakeFiles\GYMbox.dir\Player.cpp.i
-
-CMakeFiles/GYMbox.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GYMbox.dir/Player.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alex\CLionProjects\GYMbox\Player.cpp -o CMakeFiles\GYMbox.dir\Player.cpp.s
-
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/DynamicObject.cpp
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj -MF CMakeFiles\GYMbox.dir\DynamicObject.cpp.obj.d -o CMakeFiles\GYMbox.dir\DynamicObject.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\DynamicObject.cpp
-
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GYMbox.dir/DynamicObject.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Alex\CLionProjects\GYMbox\DynamicObject.cpp > CMakeFiles\GYMbox.dir\DynamicObject.cpp.i
-
-CMakeFiles/GYMbox.dir/DynamicObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GYMbox.dir/DynamicObject.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Alex\CLionProjects\GYMbox\DynamicObject.cpp -o CMakeFiles\GYMbox.dir\DynamicObject.cpp.s
-
 CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
 CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
 CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/ButtonPlayer.cpp
 CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj -MF CMakeFiles\GYMbox.dir\ButtonPlayer.cpp.obj.d -o CMakeFiles\GYMbox.dir\ButtonPlayer.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\ButtonPlayer.cpp
 
 CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.i: cmake_force
@@ -147,7 +102,7 @@ CMakeFiles/GYMbox.dir/Game.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
 CMakeFiles/GYMbox.dir/Game.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
 CMakeFiles/GYMbox.dir/Game.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/Game.cpp
 CMakeFiles/GYMbox.dir/Game.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GYMbox.dir/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GYMbox.dir/Game.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/Game.cpp.obj -MF CMakeFiles\GYMbox.dir\Game.cpp.obj.d -o CMakeFiles\GYMbox.dir\Game.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\Game.cpp
 
 CMakeFiles/GYMbox.dir/Game.cpp.i: cmake_force
@@ -162,7 +117,7 @@ CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
 CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
 CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.cpp
 CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj -MF CMakeFiles\GYMbox.dir\ButtonStrong.cpp.obj.d -o CMakeFiles\GYMbox.dir\ButtonStrong.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\ButtonStrong.cpp
 
 CMakeFiles/GYMbox.dir/ButtonStrong.cpp.i: cmake_force
@@ -177,7 +132,7 @@ CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj: CMakeFiles/GYMbox.dir/flags.make
 CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj: CMakeFiles/GYMbox.dir/includes_CXX.rsp
 CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.cpp
 CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj: CMakeFiles/GYMbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj -MF CMakeFiles\GYMbox.dir\ButtonObject.cpp.obj.d -o CMakeFiles\GYMbox.dir\ButtonObject.cpp.obj -c C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.cpp
 
 CMakeFiles/GYMbox.dir/ButtonObject.cpp.i: cmake_force
@@ -191,9 +146,6 @@ CMakeFiles/GYMbox.dir/ButtonObject.cpp.s: cmake_force
 # Object files for target GYMbox
 GYMbox_OBJECTS = \
 "CMakeFiles/GYMbox.dir/main.cpp.obj" \
-"CMakeFiles/GYMbox.dir/GYMbox.cpp.obj" \
-"CMakeFiles/GYMbox.dir/Player.cpp.obj" \
-"CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj" \
 "CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj" \
 "CMakeFiles/GYMbox.dir/Game.cpp.obj" \
 "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj" \
@@ -203,9 +155,6 @@ GYMbox_OBJECTS = \
 GYMbox_EXTERNAL_OBJECTS =
 
 GYMbox.exe: CMakeFiles/GYMbox.dir/main.cpp.obj
-GYMbox.exe: CMakeFiles/GYMbox.dir/GYMbox.cpp.obj
-GYMbox.exe: CMakeFiles/GYMbox.dir/Player.cpp.obj
-GYMbox.exe: CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj
 GYMbox.exe: CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj
 GYMbox.exe: CMakeFiles/GYMbox.dir/Game.cpp.obj
 GYMbox.exe: CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj
@@ -218,7 +167,7 @@ GYMbox.exe: C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64
 GYMbox.exe: CMakeFiles/GYMbox.dir/linkLibs.rsp
 GYMbox.exe: CMakeFiles/GYMbox.dir/objects1
 GYMbox.exe: CMakeFiles/GYMbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable GYMbox.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable GYMbox.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GYMbox.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
