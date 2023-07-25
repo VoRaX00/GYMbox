@@ -11,7 +11,7 @@ private:
     sf::Texture worldBackgroundTex;
     sf::RenderWindow* window;
     ButtonPlayer* player;
-    ButtStrong* strong;
+    ButtonStrong* strong;
 
     sf::Font font;
     sf::Text pointText;

@@ -36,7 +36,7 @@ void Game::initPlayer() {
 
 void Game::initStrong() {
 
-    this->strong = new ButtStrong();
+    this->strong = new ButtonStrong();
     this->strong->setPosition(1150,150);
 }
 
