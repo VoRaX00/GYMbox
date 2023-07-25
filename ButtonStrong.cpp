@@ -5,10 +5,8 @@ ButtonStrong::ButtonStrong() {
     this->initSprite();
 }
 
-ButtonStrong::~ButtonStrong() = default;
+ButtonStrong::~ButtonStrong() {
 
-void ButtonStrong::initSprite() {
-    this->sprite.setTexture(this->mainTex);
 }
 
 void ButtonStrong::initTexture() {
@@ -17,15 +15,13 @@ void ButtonStrong::initTexture() {
     }
 }
 
-void ButtonStrong::update() {
-
-}
+void ButtonStrong::update(){}
 
 void ButtonStrong::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-void ButtonStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
+void ButtonStrong::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -38,9 +34,9 @@ void ButtonStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& win
 }
 
 void ButtonStrong::setPosition(float x, float y) {
-    this->sprite.setPosition(x, y);
+    this->sprite.setPosition(x,y);
 }
 
-void ButtonStrong::setPosition(const sf::Vector2f& position) {
+void ButtonStrong::setPosition(const sf::Vector2f &position) {
     this->sprite.setPosition(position);
 }

@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Button.h">
 			<Option target="GYMbox"/>
 		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.cpp">
+			<Option target="GYMbox"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h">
+			<Option target="GYMbox"/>
+		</Unit>
 		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonPlayer.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
