@@ -14,10 +14,10 @@ protected:
     virtual void initTexture() = 0;
 
 public:
-    ButtonObject() = default;
+    ButtonObject();
     virtual void update() = 0;
     virtual void render(sf::RenderTarget& target) = 0;
     virtual void handleClickEvent(sf::Event event, sf::RenderWindow& window) = 0;
-    virtual void setPosition(float x, float y) = 0;
-    virtual void setPosition(const sf::Vector2f& position) = 0;
+    void setPosition(float x, float y);
+    void setPosition(const sf::Vector2f& position);
 };

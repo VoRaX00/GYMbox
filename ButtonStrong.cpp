@@ -5,10 +5,6 @@ ButtonStrong::ButtonStrong() {
     this->initSprite();
 }
 
-ButtonStrong::~ButtonStrong() {
-
-}
-
 void ButtonStrong::initTexture() {
     if (!this->mainTex.loadFromFile(R"(images\button.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
@@ -31,12 +27,4 @@ void ButtonStrong::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
             }
         }
     }
-}
-
-void ButtonStrong::setPosition(float x, float y) {
-    this->sprite.setPosition(x,y);
-}
-
-void ButtonStrong::setPosition(const sf::Vector2f &position) {
-    this->sprite.setPosition(position);
 }

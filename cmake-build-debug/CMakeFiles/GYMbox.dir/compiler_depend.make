@@ -416,6 +416,7 @@ CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/B
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -957,6 +958,7 @@ CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -1245,6 +1247,7 @@ CMakeFiles/GYMbox.dir/GYMbox.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/GYMbox.
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -1533,6 +1536,7 @@ CMakeFiles/GYMbox.dir/Game.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/Game.cpp 
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -1653,7 +1657,6 @@ CMakeFiles/GYMbox.dir/Game.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/Game.cpp 
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics/Text.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics/VertexBuffer.hpp \
   C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.h \
-  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
 
@@ -1809,6 +1812,7 @@ CMakeFiles/GYMbox.dir/Player.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/Player.
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -2097,6 +2101,7 @@ CMakeFiles/GYMbox.dir/main.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/main.cpp 
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Window.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/System.hpp \
@@ -2217,7 +2222,6 @@ CMakeFiles/GYMbox.dir/main.cpp.obj: C:/Users/Alex/CLionProjects/GYMbox/main.cpp 
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics/Text.hpp \
   C:/Users/Alex/CLionProjects/lib/sfml/GCC\ 7.3.0\ MinGW\ (SEH)\ -\ 64-bit/SFML-2.6.0/include/SFML/Graphics/VertexBuffer.hpp \
   C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.h \
-  C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
   C:/Program\ Files/JetBrains/CLion\ 2023.1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
 

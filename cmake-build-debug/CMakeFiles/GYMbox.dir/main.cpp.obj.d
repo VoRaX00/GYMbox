@@ -149,6 +149,7 @@ CMakeFiles/GYMbox.dir/main.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
+ C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.h \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Window.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/System.hpp \
@@ -269,6 +270,5 @@ CMakeFiles/GYMbox.dir/main.cpp.obj: \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/Text.hpp \
  C:/Users/Alex/CLIONP~1/lib/sfml/GCC73~1.0MI/SFML-2~1.0/include/SFML/Graphics/VertexBuffer.hpp \
  C:\Users\Alex\CLionProjects\GYMbox\ButtonStrong.h \
- C:\Users\Alex\CLionProjects\GYMbox\ButtonObject.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc
