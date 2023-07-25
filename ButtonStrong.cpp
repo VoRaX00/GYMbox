@@ -20,7 +20,7 @@ void ButtonStrong::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-bool ButtonStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
+bool ButtonStrong::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);

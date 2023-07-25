@@ -11,6 +11,6 @@ public:
     ~ButtonStrong();
     void update() override;
     void render(sf::RenderTarget& target) override;
-    bool handleClickEvent(sf::Event event, const sf::RenderWindow& window);
+    bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
     unsigned price;
 };

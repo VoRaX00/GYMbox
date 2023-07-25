@@ -17,7 +17,7 @@ public:
     ButtonObject();
     virtual void update() = 0;
     virtual void render(sf::RenderTarget& target) = 0;
-    //virtual void handleClickEvent(sf::Event event, sf::RenderWindow& window) = 0;
+    virtual bool handleClickEvent(sf::Event event, sf::RenderWindow& window) = 0;
     void setPosition(float x, float y);
     void setPosition(const sf::Vector2f& position);
 };
