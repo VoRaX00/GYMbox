@@ -36,7 +36,7 @@ void Game::initPlayer() {
 
 void Game::initStrong() {
 
-    this->strong = new ButtStrong();
+    this->strong = new ButtonStrong();
     this->strong->setPosition(1150,150);
 }
 
@@ -53,7 +53,7 @@ void Game::update() {
         this->player->handleClickEvent(event, *this->window);
 
         if (this->player->points >= this->strong->price){
-            if(this->strong->handleClickEvent(event, *this->window) == true){
+            if(this->strong->handleClickEvent(event, *this->window)){
                 this->player->points-=this->strong->price;
                 this->strong->price*=3;
                 this->player->power*=5;

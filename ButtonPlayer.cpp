@@ -36,7 +36,7 @@ void ButtonPlayer::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-void ButtonPlayer::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
+void ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -45,10 +45,11 @@ void ButtonPlayer::handleClickEvent(sf::Event event, const sf::RenderWindow& win
                 std::cout << "Button clicked!" << std::endl;
                 points+=power;
 
-                if(points%2==0){
-                    this->sprite.setTexture(this->mainTex);
-                }
-                else this->sprite.setTexture(this->pressedTex);
+                sprite.setTexture(pressedTex);
+                window.draw(sprite);
+                window.display();
+                sf::sleep(sf::seconds(0.1));
+                sprite.setTexture(mainTex);
             }
         }
     }

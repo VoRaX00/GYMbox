@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ButtonPlayer.h"
-#include "ButtStrong.h"
+#include "ButtonStrong.h"
 #include "string"
 #include "sstream"
 
@@ -11,7 +11,7 @@ private:
     sf::Texture worldBackgroundTex;
     sf::RenderWindow* window;
     ButtonPlayer* player;
-    ButtStrong* strong;
+    ButtonStrong* strong;
 
     sf::Font font;
     sf::Text pointText;

@@ -23,7 +23,7 @@ public:
     unsigned power;
     void update();
     void render(sf::RenderTarget& target);
-    void handleClickEvent(sf::Event event, const sf::RenderWindow& window);
+    void handleClickEvent(sf::Event event, sf::RenderWindow& window);
     void setPosition(float x, float y);
     void setPosition(const sf::Vector2f& position);
     const int& getHp() const;
