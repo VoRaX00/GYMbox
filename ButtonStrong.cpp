@@ -1,33 +1,31 @@
-#include "ButtStrong.h"
+#include "ButtonStrong.h"
 
-ButtStrong::ButtStrong() {
+ButtonStrong::ButtonStrong() {
     this->initTexture();
     this->initSprite();
 }
 
-ButtStrong::~ButtStrong() {
+ButtonStrong::~ButtonStrong() = default;
 
-}
-
-void ButtStrong::initSprite() {
+void ButtonStrong::initSprite() {
     this->sprite.setTexture(this->mainTex);
 }
 
-void ButtStrong::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(C:\Users\glebm\CLionProjects\GYMbox\images\button.png)")) {
+void ButtonStrong::initTexture() {
+    if (!this->mainTex.loadFromFile(R"(images\button.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }
 
-void ButtStrong::update() {
+void ButtonStrong::update() {
 
 }
 
-void ButtStrong::render(sf::RenderTarget &target) {
+void ButtonStrong::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-void ButtStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
+void ButtonStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
@@ -39,10 +37,10 @@ void ButtStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& windo
     }
 }
 
-void ButtStrong::setPosition(float x, float y) {
+void ButtonStrong::setPosition(float x, float y) {
     this->sprite.setPosition(x, y);
 }
 
-void ButtStrong::setPosition(const sf::Vector2f& position) {
+void ButtonStrong::setPosition(const sf::Vector2f& position) {
     this->sprite.setPosition(position);
 }

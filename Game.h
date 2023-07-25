@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ButtonPlayer.h"
-#include "ButtStrong.h"
+#include "ButtonStrong.h"
 #include "string"
 #include "sstream"
 

@@ -67,7 +67,7 @@ void Game::render() {
 }
 
 void Game::initWorld() {
-    if(!this->worldBackgroundTex.loadFromFile("C:\\Users\\glebm\\CLionProjects\\GYMbox\\images\\BackGym.png")){
+    if(!this->worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
         std::cout << "ERROR";
     }
     this->worldBackground.setTexture(this->worldBackgroundTex);

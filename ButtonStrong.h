@@ -4,15 +4,15 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
-class ButtStrong{
+class ButtonStrong{
 private:
     sf::Sprite sprite;
     sf::Texture mainTex;
     void initSprite();
     void initTexture();
 public:
-    ButtStrong();
-    ~ButtStrong();
+    ButtonStrong();
+    ~ButtonStrong();
     void update();
     void render(sf::RenderTarget& target);
     void handleClickEvent(sf::Event event, const sf::RenderWindow& window);
