@@ -5,6 +5,7 @@ ButtonPlayer::ButtonPlayer()
     this->initTexture();
     this->initSprite();
     points = 0;
+    power = 1;
     this->hpMax = 100;
     this->hp = this->hpMax;
 }
@@ -42,7 +43,7 @@ void ButtonPlayer::handleClickEvent(sf::Event event, const sf::RenderWindow& win
 
             if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "Button clicked!" << std::endl;
-                points++;
+                points+=power;
 
                 if(points%2==0){
                     this->sprite.setTexture(this->mainTex);

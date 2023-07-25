@@ -15,7 +15,8 @@ public:
     ~ButtStrong();
     void update();
     void render(sf::RenderTarget& target);
-    void handleClickEvent(sf::Event event, const sf::RenderWindow& window);
+    bool handleClickEvent(sf::Event event, const sf::RenderWindow& window);
     void setPosition(float x, float y);
     void setPosition(const sf::Vector2f& position);
+    unsigned price;
 };

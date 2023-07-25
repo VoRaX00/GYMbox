@@ -3,6 +3,7 @@
 ButtStrong::ButtStrong() {
     this->initTexture();
     this->initSprite();
+    price = 50;
 }
 
 ButtStrong::~ButtStrong() {
@@ -14,7 +15,7 @@ void ButtStrong::initSprite() {
 }
 
 void ButtStrong::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(C:\Users\glebm\CLionProjects\GYMbox\images\button.png)")) {
+    if (!this->mainTex.loadFromFile(R"(images\button.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }
@@ -27,13 +28,14 @@ void ButtStrong::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
 }
 
-void ButtStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
+bool ButtStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& window) {
     if (event.type == sf::Event::MouseButtonPressed) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
 
             if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "ButtonStrong clicked!" << std::endl;
+                return true;
             }
         }
     }

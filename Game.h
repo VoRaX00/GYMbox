@@ -15,9 +15,8 @@ private:
 
     sf::Font font;
     sf::Text pointText;
-    unsigned points;
+    sf::Text strongText;
 
-    unsigned multiplier;
     sf::RectangleShape playerHpBar;
     sf::RectangleShape playerHpBarBack;
 
@@ -29,6 +28,8 @@ private:
     void initSystems();
 
 public:
+    unsigned multiplier;
+    unsigned points;
     Game();
     ~Game();
     void run();
