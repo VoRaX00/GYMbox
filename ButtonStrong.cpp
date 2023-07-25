@@ -6,13 +6,7 @@ ButtonStrong::ButtonStrong() {
     price = 50;
 }
 
-ButtonStrong::~ButtonStrong() {
-
-}
-
-void ButtonStrong::initSprite() {
-    this->sprite.setTexture(this->mainTex);
-}
+ButtonStrong::~ButtonStrong() =default;
 
 void ButtonStrong::initTexture() {
     if (!this->mainTex.loadFromFile(R"(images\button.png)")) {
@@ -20,9 +14,7 @@ void ButtonStrong::initTexture() {
     }
 }
 
-void ButtonStrong::update() {
-
-}
+void ButtonStrong::update() {}
 
 void ButtonStrong::render(sf::RenderTarget &target) {
     target.draw(this->sprite);
@@ -41,12 +33,4 @@ bool ButtonStrong::handleClickEvent(sf::Event event, const sf::RenderWindow& win
     }
 
     return false;
-}
-
-void ButtonStrong::setPosition(float x, float y) {
-    this->sprite.setPosition(x, y);
-}
-
-void ButtonStrong::setPosition(const sf::Vector2f& position) {
-    this->sprite.setPosition(position);
 }

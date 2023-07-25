@@ -3,7 +3,7 @@
 #include <iostream>
 #include "ButtonObject.h"
 
-class ButtonStrong : ButtonObject{
+class ButtonStrong : public ButtonObject{
 private:
     void initTexture() override;
 public:

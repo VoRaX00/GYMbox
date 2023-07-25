@@ -128,6 +128,30 @@ GYMbox/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/build
 .PHONY : GYMbox/fast
 
+ButtonObject.obj: ButtonObject.cpp.obj
+.PHONY : ButtonObject.obj
+
+# target to build an object file
+ButtonObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj
+.PHONY : ButtonObject.cpp.obj
+
+ButtonObject.i: ButtonObject.cpp.i
+.PHONY : ButtonObject.i
+
+# target to preprocess a source file
+ButtonObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonObject.cpp.i
+.PHONY : ButtonObject.cpp.i
+
+ButtonObject.s: ButtonObject.cpp.s
+.PHONY : ButtonObject.s
+
+# target to generate assembly for a file
+ButtonObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonObject.cpp.s
+.PHONY : ButtonObject.cpp.s
+
 ButtonPlayer.obj: ButtonPlayer.cpp.obj
 .PHONY : ButtonPlayer.obj
 
@@ -305,6 +329,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GYMbox
+	@echo ... ButtonObject.obj
+	@echo ... ButtonObject.i
+	@echo ... ButtonObject.s
 	@echo ... ButtonPlayer.obj
 	@echo ... ButtonPlayer.i
 	@echo ... ButtonPlayer.s

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.cpp" "CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/ButtonObject.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/ButtonPlayer.cpp" "CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/ButtonPlayer.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.cpp" "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/DynamicObject.cpp" "CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/DynamicObject.cpp.obj.d"

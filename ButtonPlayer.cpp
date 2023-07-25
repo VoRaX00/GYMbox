@@ -43,7 +43,7 @@ void ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
                 sprite.setTexture(pressedTex);
                 window.draw(sprite);
                 window.display();
-                sf::sleep(sf::seconds(1));
+                sf::sleep(sf::seconds(0.1f));
                 sprite.setTexture(mainTex);
             }
         }
