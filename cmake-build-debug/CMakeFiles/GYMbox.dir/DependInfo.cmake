@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Alex/CLionProjects/GYMbox/ButtonStart.cpp" "CMakeFiles/GYMbox.dir/ButtonStart.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/ButtonStart.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.cpp" "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/Game.cpp" "CMakeFiles/GYMbox.dir/Game.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/Game.cpp.obj.d"
+  "C:/Users/Alex/CLionProjects/GYMbox/Menu.cpp" "CMakeFiles/GYMbox.dir/Menu.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/Menu.cpp.obj.d"
   "C:/Users/Alex/CLionProjects/GYMbox/main.cpp" "CMakeFiles/GYMbox.dir/main.cpp.obj" "gcc" "CMakeFiles/GYMbox.dir/main.cpp.obj.d"
   )
 

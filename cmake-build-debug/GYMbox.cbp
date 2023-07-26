@@ -119,6 +119,12 @@
 		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Game.h">
 			<Option target="GYMbox"/>
 		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Menu.cpp">
+			<Option target="GYMbox"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Menu.h">
+			<Option target="GYMbox"/>
+		</Unit>
 		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/main.cpp">
 			<Option target="GYMbox"/>
 		</Unit>

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/GYMbox.dir/ButtonStrong.cpp.obj.d"
   "CMakeFiles/GYMbox.dir/Game.cpp.obj"
   "CMakeFiles/GYMbox.dir/Game.cpp.obj.d"
+  "CMakeFiles/GYMbox.dir/Menu.cpp.obj"
+  "CMakeFiles/GYMbox.dir/Menu.cpp.obj.d"
   "CMakeFiles/GYMbox.dir/main.cpp.obj"
   "CMakeFiles/GYMbox.dir/main.cpp.obj.d"
   "GYMbox.exe"
