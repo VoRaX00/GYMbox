@@ -18,7 +18,7 @@ void ButtonPlayer::initTexture() {
     }
 
     if (!this->pressedTex.loadFromFile(R"(images\G21.png)")) {
-        std::cout << "ERROR: Could not load main texture" << std::endl;
+        std::cout << "ERROR: Could not load pressed texture" << std::endl;
     }
 }
 
@@ -61,4 +61,20 @@ void ButtonPlayer::resetTexturePressed() {
 
 void ButtonPlayer::resetTextureReleased() {
     sprite.setTexture(mainTex);
+}
+
+void ButtonPlayer::setMainTexture(const std::string& path) {
+    sf::Texture tmp;
+    if (!tmp.loadFromFile(path)) {
+        std::cout << "ERROR: Could not load main texture" << std::endl;
+    }
+    mainTex = tmp;
+}
+
+void ButtonPlayer::setPressedTexture(const std::string& path) {
+    sf::Texture tmp;
+    if (!tmp.loadFromFile(path)) {
+        std::cout << "ERROR: Could not load pressed texture" << std::endl;
+    }
+    pressedTex = tmp;
 }

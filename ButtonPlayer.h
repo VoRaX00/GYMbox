@@ -21,6 +21,9 @@ public:
     void render(sf::RenderTarget& target) override;
     bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
 
+    void setMainTexture(const std::string& path);
+    void setPressedTexture(const std::string& path);
+
     void resetTexturePressed();
     void resetTextureReleased();
 

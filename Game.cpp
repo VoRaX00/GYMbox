@@ -75,8 +75,7 @@ void Game::update() {
             }
 
             if (this->multiplier == 1800) {
-                this->level++;
-                this->multiplier = 0;
+                newLevel();
             }
         }
     }
@@ -187,4 +186,15 @@ void Game::renderDefault() {
     this->strong->render(*this->window);
     this->renderGUI();
     this->window->display();
+}
+
+void Game::newLevel() {
+    this->level++;
+
+    std::string pathMain = "images/G1" + std::to_string(level) + ".png";//После второго уровня будет белый квадрат, так как у нас нет следующих спрайтов
+    std::string pathPressed = "images/G2" + std::to_string(level) + ".png";
+    player->setMainTexture(pathMain);
+    player->setPressedTexture(pathPressed);
+
+    this->multiplier = 0;
 }

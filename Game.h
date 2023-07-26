@@ -47,6 +47,7 @@ public:
     void render();
     void renderGUI();
     void renderWorld();
+    void newLevel(); //Метод, который изменяет уровень и спрайты персонажа
     //unsigned power;
     unsigned level;
 };
