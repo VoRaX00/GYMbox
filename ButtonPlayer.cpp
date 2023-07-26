@@ -13,11 +13,11 @@ ButtonPlayer::ButtonPlayer()
 ButtonPlayer::~ButtonPlayer() = default;
 
 void ButtonPlayer::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(images\G1.png)")) {
+    if (!this->mainTex.loadFromFile("images\\G11.png")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 
-    if (!this->pressedTex.loadFromFile(R"(images\G2.png)")) {
+    if (!this->pressedTex.loadFromFile(R"(images\G21.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }

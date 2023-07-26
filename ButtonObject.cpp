@@ -1,7 +1,3 @@
-//
-// Created by Alex on 25.07.2023.
-//
-
 #include "ButtonObject.h"
 
 void ButtonObject::initSprite() {

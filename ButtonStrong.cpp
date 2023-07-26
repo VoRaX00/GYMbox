@@ -3,7 +3,7 @@
 ButtonStrong::ButtonStrong() {
     this->initTexture();
     this->initSprite();
-    price = 50;
+    price = 10;
 }
 
 ButtonStrong::~ButtonStrong() =default;

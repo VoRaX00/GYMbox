@@ -2,6 +2,7 @@
 
 #include "ButtonPlayer.h"
 #include "ButtonStrong.h"
+#include "ButtonStart.h"
 #include "string"
 #include "sstream"
 
@@ -12,19 +13,24 @@ private:
     sf::RenderWindow* window;
     ButtonPlayer* player;
     ButtonStrong* strong;
+    ButtonStart* start;
 
     bool playerClick = false;
 
     sf::Font font;
     sf::Text pointText;
     sf::Text strongText;
+    sf::Text levelText;
 
     sf::RectangleShape playerHpBar;
     sf::RectangleShape playerHpBarBack;
 
+    bool startButtonPressed;
+
     void initWindow();
     void initPlayer();
     void initStrong();
+    void initStart();
     void initWorld();
     void initGUI();
     void initSystems();
@@ -41,5 +47,6 @@ public:
     void render();
     void renderGUI();
     void renderWorld();
-    unsigned power;
+    //unsigned power;
+    unsigned level;
 };

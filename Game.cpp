@@ -4,6 +4,7 @@ Game::Game() {
     this->initWindow();
     this->initPlayer();
     this->initStrong();
+    this->initStart();
     this->initWorld();
     this->initGUI();
     this->initSystems();
@@ -13,6 +14,7 @@ Game::~Game(){
     delete this->window;
     delete this->player;
     delete this->strong;
+    delete this->start;
 }
 
 void Game::run() {
@@ -23,9 +25,9 @@ void Game::run() {
 }
 
 void Game::initWindow() {
-    this->window = new sf::RenderWindow (sf::VideoMode(1800, 990), "GYMbox/build_1.0", sf::Style::Titlebar | sf::Style::Close);
+    this->window = new sf::RenderWindow (sf::VideoMode(1800, 990), "GYMbox/09.03.04", sf::Style::Titlebar | sf::Style::Close);
     this->window->setFramerateLimit(90);
-    this->window->setVerticalSyncEnabled(true);
+    //this->window->setVerticalSyncEnabled(true);
 }
 
 void Game::initPlayer() {
@@ -40,6 +42,12 @@ void Game::initStrong() {
     this->strong->setPosition(1150,150);
 }
 
+void Game::initStart() {
+
+    this->start = new ButtonStart();
+    this->start->setPosition(0,50);
+}
+
 void Game::update() {
     sf::Event event;
     while(this->window->pollEvent(event)){
@@ -50,14 +58,25 @@ void Game::update() {
             this->window->close();
         }
 
-        playerClick = this->player->handleClickEvent(event, *this->window);
+        if (!this->startButtonPressed) {
+            if (this->start->handleClickEvent(event, *this->window)) {
+                this->startButtonPressed = true;
+            }
+        } else {
+            playerClick = this->player->handleClickEvent(event, *this->window);
 
-        if (this->player->points >= this->strong->price){
-            if(this->strong->handleClickEvent(event, *this->window)){
-                this->player->points-=this->strong->price;
-                this->strong->price*=3;
-                this->player->power*=5;
-                this->multiplier+=100;
+            if (this->player->points >= this->strong->price) {
+                if (this->strong->handleClickEvent(event, *this->window)) {
+                    this->player->points -= this->strong->price;
+                    this->strong->price *= 3;
+                    this->player->power *= 5;
+                    this->multiplier += 600;
+                }
+            }
+
+            if (this->multiplier == 1800) {
+                this->level++;
+                this->multiplier = 0;
             }
         }
     }
@@ -65,16 +84,26 @@ void Game::update() {
     this->updateGUI();
 }
 
+
 void Game::render() {
-    if(playerClick){
+    sf::Event event;
+
+    if (playerClick) {
         player->resetTexturePressed();
         renderDefault();
         sf::sleep(sf::seconds(0.1));
         player->resetTextureReleased();
     }
-    renderDefault();
-}
 
+    if (!this->startButtonPressed) {
+        this->window->clear();
+        this->renderWorld();
+        this->start->render(*this->window);
+        this->window->display();
+    } else {
+        renderDefault();
+    }
+}
 
 
 void Game::initWorld() {
@@ -105,6 +134,12 @@ void Game::initGUI()
     this->strongText.setFillColor(sf::Color::White);
     this->strongText.setString("test");
 
+    this->levelText.setPosition(700.f, 900.f);
+    this->levelText.setFont(this->font);
+    this->levelText.setCharacterSize(50);
+    this->levelText.setFillColor(sf::Color::Black);
+    this->levelText.setString("test");
+
     this->playerHpBar.setSize(sf::Vector2f(1800.f, 25.f));
     this->playerHpBar.setFillColor(sf::Color::Yellow);
     this->playerHpBar.setPosition(sf::Vector2f(0.f, 970.f));
@@ -117,16 +152,20 @@ void Game::initSystems()
 {
     this->points = 0;
     this->multiplier = 0;
+    this->level = 1;
 }
 
 void Game::updateGUI()
 {
     std::stringstream ss;
     std::stringstream ssq;
+    std::stringstream ssl;
     ss << "POWER: " << this->player->points;
     ssq << "STRONG//PRICE: " << this->strong->price;
+    ssl << "LEVEL: " << this->level;
     this->pointText.setString(ss.str());
     this->strongText.setString(ssq.str());
+    this->levelText.setString(ssl.str());
 
     float hpPercent = static_cast<float>(this->player->getHp()) / this->player->getHpMax();
     this->playerHpBar.setSize(sf::Vector2f(multiplier * hpPercent, this->playerHpBar.getSize().y));
@@ -136,6 +175,7 @@ void Game::renderGUI()
 {
     this->window->draw(this->pointText);
     this->window->draw(this->strongText);
+    this->window->draw(this->levelText);
     this->window->draw(this->playerHpBarBack);
     this->window->draw(this->playerHpBar);
 }
