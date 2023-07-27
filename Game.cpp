@@ -18,6 +18,7 @@ Game::~Game(){ //Деструктор класса Game, в котором уд�
     delete strong;
     delete start;
     delete buttonMenu;
+    delete menu;
 }
 
 void Game::run() { //запуск игры
@@ -81,9 +82,11 @@ void Game::update() { //метод, который отлавливает дей
             if(isButtonMenuClicked && !menuClicked){
                 sound.play();
                 menuClicked = true;
-            }else if(isButtonMenuClicked && menuClicked){
+                break;
+            }else if(isButtonMenuClicked){
                 sound.play();
                 menuClicked = false;
+                break;
             }
 
             if(!menuClicked)
