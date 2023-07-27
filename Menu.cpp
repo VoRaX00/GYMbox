@@ -39,6 +39,7 @@ void Menu::initGUI() {
 
 void Menu::render(sf::RenderTarget &target) {
     target.draw(background);
+    renderGUI(target);
 }
 
 void Menu::setPosition(float x, float y) {

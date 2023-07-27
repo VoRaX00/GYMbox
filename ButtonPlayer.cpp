@@ -1,5 +1,5 @@
 #include "ButtonPlayer.h"
-
+#include "SFML/Audio.hpp"
 ButtonPlayer::ButtonPlayer()
 {
     initTexture();

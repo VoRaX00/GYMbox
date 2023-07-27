@@ -9,9 +9,9 @@ private:
     void initTexture() override;
     sf::Texture newTex;
     sf::Clock clock;
-    bool changingTexture;
     int hp;
     int hpMax;
+    
 public:
     ButtonPlayer();
     ~ButtonPlayer();
