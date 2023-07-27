@@ -5,149 +5,155 @@
 		<Option title="GYMbox"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\sfml\;CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\;CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\;CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\;CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\;CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\lib\;CMake Files\..\lib\sfml\;CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\;CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\;CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\;CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\;CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GYMbox">
-				<Option output="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/GYMbox.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug"/>
+				<Option output="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/GYMbox.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Alex/CLionProjects/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 GYMbox"/>
-					<CompileFile command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 GYMbox"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GYMbox/fast">
-				<Option output="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/GYMbox.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug"/>
+				<Option output="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/GYMbox.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Alex/CLionProjects/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2023.1.5/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 GYMbox/fast"/>
-					<CompileFile command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 GYMbox/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/glebm/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.9225.21/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/glebm/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.5/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Alex/CLionProjects/GYMbox/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Button.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Button.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonObject.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonMenu.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonObject.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonMenu.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonPlayer.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonPlayer.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonObject.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonStart.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonPlayer.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonStart.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonPlayer.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonStrong.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonStart.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/ButtonStrong.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonStart.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Game.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Game.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/ButtonStrong.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Menu.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Game.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/Menu.h">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Game.h">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/main.cpp">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Menu.cpp">
 			<Option target="GYMbox"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/CMakeLists.txt">
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/Menu.h">
+			<Option target="GYMbox"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/main.cpp">
+			<Option target="GYMbox"/>
+		</Unit>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/glebm/CLionProjects/GYMbox/lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets.cmake">
-			<Option virtualFolder="CMake Files\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
+		<Unit filename="C:/Users/Alex/CLionProjects/GYMbox/../lib/sfml/GCC 7.3.0 MinGW (SEH) - 64-bit/SFML-2.6.0/lib/cmake/SFML/SFMLStaticTargets.cmake">
+			<Option virtualFolder="CMake Files\..\lib\sfml\GCC 7.3.0 MinGW (SEH) - 64-bit\SFML-2.6.0\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

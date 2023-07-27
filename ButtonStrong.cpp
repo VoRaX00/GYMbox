@@ -1,15 +1,15 @@
 #include "ButtonStrong.h"
 
 ButtonStrong::ButtonStrong() {
-    this->initTexture();
-    this->initSprite();
+    initTexture();
+    initSprite();
     price = 10;
 }
 
 ButtonStrong::~ButtonStrong() =default;
 
 void ButtonStrong::initTexture() {
-    if (!this->mainTex.loadFromFile(R"(images\button.png)")) {
+    if (!mainTex.loadFromFile(R"(images\button.png)")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 }
@@ -17,7 +17,7 @@ void ButtonStrong::initTexture() {
 void ButtonStrong::update() {}
 
 void ButtonStrong::render(sf::RenderTarget &target) {
-    target.draw(this->sprite);
+    target.draw(sprite);
 }
 
 bool ButtonStrong::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
@@ -25,7 +25,7 @@ bool ButtonStrong::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
 
-            if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
+            if (sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "ButtonStrong clicked!" << std::endl;
                 return true;
             }

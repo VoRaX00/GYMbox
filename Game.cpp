@@ -1,97 +1,116 @@
 #include "Game.h"
 
-Game::Game() {
-    this->initWindow();
-    this->initPlayer();
-    this->initStrong();
-    this->initStart();
-    this->initWorld();
-    this->initGUI();
-    this->initSystems();
+Game::Game() { //Конструктор класса Game, в котором инициализируются все объекты это класса
+    initWindow();
+    initPlayer();
+    initStrong();
+    initStart();
+    initWorld();
+    initGUI();
+    initSystems();
+    initButtonMenu();
+    initMenu();
 }
 
-Game::~Game(){
-    delete this->window;
-    delete this->player;
-    delete this->strong;
-    delete this->start;
+Game::~Game(){ //Деструктор класса Game, в котором удаляются объекты
+    delete window;
+    delete player;
+    delete strong;
+    delete start;
+    delete buttonMenu;
 }
 
-void Game::run() {
-    this->backgroundMusic.play();
-    this->backgroundMusic.setLoop(true);
+void Game::run() { //запуск игры
+    backgroundMusic.play();
+    backgroundMusic.setLoop(true);
 
-    while(this->window->isOpen()){
-        this->update();
-        this->render();
+    while (window->isOpen()) {
+        update();
+        render();
     }
 }
 
-void Game::initWindow() {
-    this->window = new sf::RenderWindow (sf::VideoMode(1800, 990), "GYMbox/09.03.04", sf::Style::Titlebar | sf::Style::Close);
-    this->window->setFramerateLimit(90);
-    //this->window->setVerticalSyncEnabled(true);
+void Game::initWindow() { //инициализация окна
+    window = new sf::RenderWindow (sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "GYMbox/09.03.04", sf::Style::Titlebar | sf::Style::Close);
+    window->setFramerateLimit(90);
+    //window->setVerticalSyncEnabled(true);
 }
 
-void Game::initPlayer() {
+void Game::initPlayer() { //инициализация игрока
 
-    this->player = new ButtonPlayer();
-    this->player->setPosition(250,150);
+    player = new ButtonPlayer();
+    player->setPosition(250,150);
 }
 
-void Game::initStrong() {
+void Game::initStrong() { //инициализация кнопки
 
-    this->strong = new ButtonStrong();
-    this->strong->setPosition(1150,150);
+    strong = new ButtonStrong();
+    strong->setPosition(1150,150);
 }
 
-void Game::initStart() {
+void Game::initStart() { //инициализация кнопки старт
 
-    this->start = new ButtonStart();
-    this->start->setPosition(0,50);
+    start = new ButtonStart();
+    start->setPosition(0,50);
 }
 
-void Game::update() {
+
+void Game::initButtonMenu() { //инициализация кнопки меню
+    buttonMenu = new ButtonMenu();
+    buttonMenu->setPosition(0,0);
+}
+
+
+void Game::update() { //метод, который отлавливает действия пользователя
     sf::Event event;
-    while(this->window->pollEvent(event)){
+    while(window->pollEvent(event)){
         if(event.Event::type == sf::Event::Closed){
-            this->window->close();
+            window->close();
         }
-        if(event.Event::KeyPressed && event.Event::key.code == sf::Keyboard::Escape){
-            this->window->close();
+        if(event.Event::key.code == sf::Keyboard::Escape){
+            window->close();
         }
 
-        if (!this->startButtonPressed) {
-            if (this->start->handleClickEvent(event, *this->window)) {
+        if (!startButtonPressed) {
+            if (start->handleClickEvent(event, *window)) {
                 sound.play();
-                this->startButtonPressed = true;
+                startButtonPressed = true;
             }
         } else {
-            playerClick = this->player->handleClickEvent(event, *this->window);
-
-            if (playerClick) sound.play();
-
-            if (this->player->points >= this->strong->price) {
-                if (this->strong->handleClickEvent(event, *this->window)) {
-                    sound.play();
-                    this->player->points -= this->strong->price;
-                    this->strong->price *= 3;
-                    this->player->power *= 5;
-                    this->multiplier += 600;
-                }
+            bool isButtonMenuClicked = buttonMenu->handleClickEvent(event,*window);
+            if(isButtonMenuClicked && !menuClicked){
+                sound.play();
+                menuClicked = true;
+            }else if(isButtonMenuClicked && menuClicked){
+                sound.play();
+                menuClicked = false;
             }
 
-            if (this->multiplier == 1800) {
+            if(!menuClicked)
+                playerClick = player->handleClickEvent(event, *window);
+
+            if (playerClick)
+                sound.play();
+
+            if ((player->points >= strong->price) && (strong->handleClickEvent(event, *window)) && !menuClicked) {
+                    sound.play();
+                    player->points -= strong->price;
+                    strong->price *= 3;
+                    player->power *= 5;
+                    multiplier += 600;
+            }
+
+            if (multiplier == 1800) {
                 newLevel();
             }
         }
     }
 
-    this->updateGUI();
+    updateGUI();
 }
 
 
-void Game::render() {
+void Game::render() { // отрисовка изображений на окне
     sf::Event event;
 
     if (playerClick) {
@@ -101,116 +120,122 @@ void Game::render() {
         player->resetTextureReleased();
     }
 
-    if (!this->startButtonPressed) {
-        this->window->clear();
-        this->renderWorld();
-        this->start->render(*this->window);
-        this->window->display();
+    if (!startButtonPressed) {
+        window->clear();
+        renderWorld();
+        start->render(*window);
+        window->display();
     } else {
         renderDefault();
     }
 }
 
 
-void Game::initWorld() {
-    if(!this->worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
+void Game::initWorld() { //инициализация мира
+    if(!worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
         std::cout << "ERROR";
     }
-    this->worldBackground.setTexture(this->worldBackgroundTex);
+    worldBackground.setTexture(worldBackgroundTex);
 }
 
-void Game::renderWorld() {
-    this->window->draw(this->worldBackground);
+void Game::renderWorld() { //отрисовка мира
+    window->draw(worldBackground);
 }
 
-void Game::initGUI()
-{
-    if (!this->font.loadFromFile(R"(C:\Windows\Fonts\Arial.ttf)"))
-        std::cout << "ERROR::GAME::Failed to load font" << "\n";
+void Game::initGUI(){ //инициализация всех текстовых полей на сцене
+    if (!font.loadFromFile(R"(C:\Windows\Fonts\Arial.ttf)"))
+        std::cout << "ERROR::GAME::Failed to load font\n";
 
-    this->pointText.setPosition(700.f, 25.f);
-    this->pointText.setFont(this->font);
-    this->pointText.setCharacterSize(50);
-    this->pointText.setFillColor(sf::Color::Black);
-    this->pointText.setString("test");
+    pointText.setPosition(700.f, 25.f);
+    pointText.setFont(font);
+    pointText.setCharacterSize(50);
+    pointText.setFillColor(sf::Color::Black);
+    pointText.setString("test");
 
-    this->strongText.setPosition(1250.f, 200.f);
-    this->strongText.setFont(this->font);
-    this->strongText.setCharacterSize(30);
-    this->strongText.setFillColor(sf::Color::White);
-    this->strongText.setString("test");
+    strongText.setPosition(1250.f, 200.f);
+    strongText.setFont(font);
+    strongText.setCharacterSize(30);
+    strongText.setFillColor(sf::Color::White);
+    strongText.setString("test");
 
-    this->levelText.setPosition(700.f, 900.f);
-    this->levelText.setFont(this->font);
-    this->levelText.setCharacterSize(50);
-    this->levelText.setFillColor(sf::Color::Black);
-    this->levelText.setString("test");
+    levelText.setPosition(700.f, 900.f);
+    levelText.setFont(font);
+    levelText.setCharacterSize(50);
+    levelText.setFillColor(sf::Color::Black);
+    levelText.setString("test");
 
-    this->playerHpBar.setSize(sf::Vector2f(1800.f, 25.f));
-    this->playerHpBar.setFillColor(sf::Color::Yellow);
-    this->playerHpBar.setPosition(sf::Vector2f(0.f, 970.f));
+    playerHpBar.setSize(sf::Vector2f(1800.f, 25.f));
+    playerHpBar.setFillColor(sf::Color::Yellow);
+    playerHpBar.setPosition(sf::Vector2f(0.f, 970.f));
 
-    this->playerHpBarBack = this->playerHpBar;
-    this->playerHpBarBack.setFillColor(sf::Color(25, 25, 25, 200));
+    playerHpBarBack = playerHpBar;
+    playerHpBarBack.setFillColor(sf::Color(25, 25, 25, 200));
 }
 
-void Game::initSystems()
-{
-    this->points = 0;
-    this->multiplier = 0;
-    this->level = 1;
-    if (!this->backgroundMusic.openFromFile("music\\ACDC.ogg")) {
+void Game::initSystems(){ //инициализация системы
+    points = 0;
+    multiplier = 0;
+    level = 1;
+    if (!backgroundMusic.openFromFile("music\\ACDC.ogg")) {
         std::cout << "ERROR::GAME::Failed to load background music" << std::endl;
     }
 
-    if (!this->buffer.loadFromFile("music\\sound.ogg")) {
+    if (!buffer.loadFromFile("music\\sound.ogg")) {
         std::cout << "ERROR" << std::endl;
     }
 
-    this->sound.setBuffer(buffer);
+    sound.setBuffer(buffer);
 }
 
-void Game::updateGUI()
-{
+void Game::updateGUI(){ //метод, который изменяет текстовые поля взависимости от действий пользователя
     std::stringstream ss;
     std::stringstream ssq;
     std::stringstream ssl;
-    ss << "POWER: " << this->player->points;
-    ssq << "STRONG//PRICE: " << this->strong->price;
-    ssl << "LEVEL: " << this->level;
-    this->pointText.setString(ss.str());
-    this->strongText.setString(ssq.str());
-    this->levelText.setString(ssl.str());
+    ss << "POWER: " << player->points;
+    ssq << "STRONG//PRICE: " << strong->price;
+    ssl << "LEVEL: " << level;
+    pointText.setString(ss.str());
+    strongText.setString(ssq.str());
+    levelText.setString(ssl.str());
 
-    float hpPercent = static_cast<float>(this->player->getHp()) / this->player->getHpMax();
-    this->playerHpBar.setSize(sf::Vector2f(multiplier * hpPercent, this->playerHpBar.getSize().y));
+    float hpPercent = static_cast<float>(player->getHp()) / player->getHpMax();
+    playerHpBar.setSize(sf::Vector2f(multiplier * hpPercent, playerHpBar.getSize().y));
 }
 
-void Game::renderGUI()
+void Game::renderGUI() //отрисовка текстовых полей
 {
-    this->window->draw(this->pointText);
-    this->window->draw(this->strongText);
-    this->window->draw(this->levelText);
-    this->window->draw(this->playerHpBarBack);
-    this->window->draw(this->playerHpBar);
+    window->draw(pointText);
+    window->draw(strongText);
+    window->draw(levelText);
+    window->draw(playerHpBarBack);
+    window->draw(playerHpBar);
 }
 
-void Game::renderDefault() {
-    this->window->clear();
-    this->renderWorld();
-    this->player->render(*this->window);
-    this->strong->render(*this->window);
-    this->renderGUI();
-    this->window->display();
+void Game::renderDefault() { //Базовая отрисовка всей сцены
+    window->clear();
+    renderWorld();
+    player->render(*window);
+    strong->render(*window);
+    buttonMenu->render(*window);
+    renderGUI();
+    if(menuClicked){
+        menu->render(*window);
+    }
+    window->display();
 }
 
-void Game::newLevel() {
-    this->level++;
+void Game::newLevel() { // Метод изменяющий уровень
+    level++;
 
-    std::string pathMain = "images/G1" + std::to_string(level) + ".png";//После второго уровня будет белый квадрат, так как у нас нет следующих спрайтов
+    std::string pathMain = "images/G1" + std::to_string(level) + ".png"; //После второго уровня будет белый квадрат, так как у нас нет следующих спрайтов
     std::string pathPressed = "images/G2" + std::to_string(level) + ".png";
     player->setMainTexture(pathMain);
     player->setPressedTexture(pathPressed);
 
-    this->multiplier = 0;
+    multiplier = 0;
+}
+
+void Game::initMenu() {
+    menu = new Menu();
+    menu->setPosition(400.f, 100);
 }

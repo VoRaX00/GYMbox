@@ -1,12 +1,29 @@
+//
+// Created by Alex on 27.07.2023.
+//
 #pragma once
-#include "ButtonObject.h"
+#include "string"
+#include "sstream"
+#include <SFML/Graphics.hpp>
 
-class Menu : public ButtonObject{
+class Menu{
+
 private:
-    void initTexture() override;
+    sf::RenderWindow* window;
+    sf::Sprite background;
+    sf::Texture backgroundTexture;
+    sf::Font font;
+
+    sf::Text headText;
+    sf::Text volumeSettingsText;
+
+    void initTexture(); //инициализация текстуры
+    void initSprite(); //инициализация спрайта
+    void initGUI();
+    void renderGUI(sf::RenderTarget &target);
+
 public:
     Menu();
-    void update() override;
-    void render(sf::RenderTarget& target) override;
-    bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
+    void render(sf::RenderTarget &target);
+    void setPosition(float x, float y);
 };

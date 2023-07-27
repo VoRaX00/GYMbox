@@ -1,7 +1,7 @@
 #include "ButtonObject.h"
 
 void ButtonObject::initSprite() {
-    this->sprite.setTexture(mainTex);
+    sprite.setTexture(mainTex);
 }
 
 ButtonObject::ButtonObject() = default;

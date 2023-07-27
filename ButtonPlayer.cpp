@@ -2,32 +2,30 @@
 
 ButtonPlayer::ButtonPlayer()
 {
-    this->initTexture();
-    this->initSprite();
+    initTexture();
+    initSprite();
     points = 0;
     power = 1;
-    this->hpMax = 100;
-    this->hp = this->hpMax;
+    hpMax = 100;
+    hp = hpMax;
 }
 
 ButtonPlayer::~ButtonPlayer() = default;
 
 void ButtonPlayer::initTexture() {
-    if (!this->mainTex.loadFromFile("images\\G11.png")) {
+    if (!mainTex.loadFromFile("images\\G11.png")) {
         std::cout << "ERROR: Could not load main texture" << std::endl;
     }
 
-    if (!this->pressedTex.loadFromFile(R"(images\G21.png)")) {
+    if (!pressedTex.loadFromFile(R"(images\G21.png)")) {
         std::cout << "ERROR: Could not load pressed texture" << std::endl;
     }
 }
 
-void ButtonPlayer::update() {
-
-}
+void ButtonPlayer::update() {}
 
 void ButtonPlayer::render(sf::RenderTarget &target) {
-    target.draw(this->sprite);
+    target.draw(sprite);
 }
 
 bool ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
@@ -35,7 +33,7 @@ bool ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
         if (event.mouseButton.button == sf::Mouse::Left) {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
 
-            if (this->sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
+            if (sprite.getGlobalBounds().contains(static_cast<float>(mousePosition.x), static_cast<float>(mousePosition.y))) {
                 std::cout << "Button clicked!" << std::endl;
                 points+=power;
                 return true;
@@ -47,12 +45,12 @@ bool ButtonPlayer::handleClickEvent(sf::Event event, sf::RenderWindow& window) {
 
 const int& ButtonPlayer::getHp() const
 {
-    return this->hp;
+    return hp;
 }
 
 const int& ButtonPlayer::getHpMax() const
 {
-    return this->hpMax;
+    return hpMax;
 }
 
 void ButtonPlayer::resetTexturePressed() {
