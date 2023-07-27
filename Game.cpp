@@ -18,6 +18,9 @@ Game::~Game(){
 }
 
 void Game::run() {
+    this->backgroundMusic.play();
+    this->backgroundMusic.setLoop(true);
+
     while(this->window->isOpen()){
         this->update();
         this->render();
@@ -60,13 +63,17 @@ void Game::update() {
 
         if (!this->startButtonPressed) {
             if (this->start->handleClickEvent(event, *this->window)) {
+                sound.play();
                 this->startButtonPressed = true;
             }
         } else {
             playerClick = this->player->handleClickEvent(event, *this->window);
 
+            if (playerClick) sound.play();
+
             if (this->player->points >= this->strong->price) {
                 if (this->strong->handleClickEvent(event, *this->window)) {
+                    sound.play();
                     this->player->points -= this->strong->price;
                     this->strong->price *= 3;
                     this->player->power *= 5;
@@ -152,6 +159,15 @@ void Game::initSystems()
     this->points = 0;
     this->multiplier = 0;
     this->level = 1;
+    if (!this->backgroundMusic.openFromFile("music\\ACDC.ogg")) {
+        std::cout << "ERROR::GAME::Failed to load background music" << std::endl;
+    }
+
+    if (!this->buffer.loadFromFile("music\\sound.ogg")) {
+        std::cout << "ERROR" << std::endl;
+    }
+
+    this->sound.setBuffer(buffer);
 }
 
 void Game::updateGUI()

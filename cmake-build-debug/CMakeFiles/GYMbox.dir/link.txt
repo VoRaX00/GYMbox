@@ -1,3 +1,3 @@
-"C:\Program Files\JetBrains\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\GYMbox.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\ar.exe qc CMakeFiles\GYMbox.dir/objects.a @CMakeFiles\GYMbox.dir\objects1
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE -g -static -static-libgcc -Wl,--whole-archive CMakeFiles\GYMbox.dir/objects.a -Wl,--no-whole-archive -o GYMbox.exe -Wl,--out-implib,libGYMbox.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GYMbox.dir\linkLibs.rsp
+C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\GYMbox.dir/objects.a
+C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\mingw\bin\ar.exe qc CMakeFiles\GYMbox.dir/objects.a @CMakeFiles\GYMbox.dir\objects1
+C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\mingw\bin\g++.exe -g -static -static-libgcc -Wl,--whole-archive CMakeFiles\GYMbox.dir/objects.a -Wl,--no-whole-archive -o GYMbox.exe -Wl,--out-implib,libGYMbox.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\GYMbox.dir\linkLibs.rsp

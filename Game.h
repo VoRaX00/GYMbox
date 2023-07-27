@@ -5,6 +5,7 @@
 #include "ButtonStart.h"
 #include "string"
 #include "sstream"
+#include <SFML/Audio.hpp>
 
 class Game{
 private:
@@ -14,6 +15,11 @@ private:
     ButtonPlayer* player;
     ButtonStrong* strong;
     ButtonStart* start;
+
+    sf::Music backgroundMusic;
+    sf::SoundBuffer buffer;
+    sf::Sound sound;
+
 
     bool playerClick = false;
 
