@@ -9,7 +9,6 @@ Game::Game() { //Конструктор класса Game, в котором и�
     initGUI();
     initSystems();
     initButtonMenu();
-    initMenu();
 }
 
 Game::~Game(){ //Деструктор класса Game, в котором удаляются объекты
@@ -82,13 +81,22 @@ void Game::update() { //метод, который отлавливает дей
             if(isButtonMenuClicked && !menuClicked){
                 sound.play();
                 menuClicked = true;
+                initMenu();
                 break;
             }else if(isButtonMenuClicked){
                 sound.play();
                 menuClicked = false;
+                delete menu;
+                menu = nullptr;
                 break;
             }
 
+            if(menuClicked) {
+                menu->update(event, *window);
+                float currentVolume = backgroundMusic.getVolume();
+                float newVolume = (currentVolume+ menu->getVolume()) > 100.f ? 100.f : currentVolume+ menu->getVolume();
+                backgroundMusic.setVolume(newVolume);
+            }
             if(!menuClicked)
                 playerClick = player->handleClickEvent(event, *window);
 

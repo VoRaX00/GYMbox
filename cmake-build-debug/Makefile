@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\glebm\CLionProjects\GYMbox
+CMAKE_SOURCE_DIR = C:\Users\Alex\CLionProjects\GYMbox
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\glebm\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\231.9225.21\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\glebm\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Alex\CLionProjects\GYMbox\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -248,6 +248,30 @@ ButtonStrong.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonStrong.cpp.s
 .PHONY : ButtonStrong.cpp.s
 
+ButtonVolume.obj: ButtonVolume.cpp.obj
+.PHONY : ButtonVolume.obj
+
+# target to build an object file
+ButtonVolume.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonVolume.cpp.obj
+.PHONY : ButtonVolume.cpp.obj
+
+ButtonVolume.i: ButtonVolume.cpp.i
+.PHONY : ButtonVolume.i
+
+# target to preprocess a source file
+ButtonVolume.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonVolume.cpp.i
+.PHONY : ButtonVolume.cpp.i
+
+ButtonVolume.s: ButtonVolume.cpp.s
+.PHONY : ButtonVolume.s
+
+# target to generate assembly for a file
+ButtonVolume.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GYMbox.dir\build.make CMakeFiles/GYMbox.dir/ButtonVolume.cpp.s
+.PHONY : ButtonVolume.cpp.s
+
 Game.obj: Game.cpp.obj
 .PHONY : Game.obj
 
@@ -368,6 +392,9 @@ help:
 	@echo ... ButtonStrong.obj
 	@echo ... ButtonStrong.i
 	@echo ... ButtonStrong.s
+	@echo ... ButtonVolume.obj
+	@echo ... ButtonVolume.i
+	@echo ... ButtonVolume.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

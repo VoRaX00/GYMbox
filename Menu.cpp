@@ -8,6 +8,8 @@ Menu::Menu(){
     initTexture();
     initSprite();
     initGUI();
+    initButtonPlus();
+    //initVolumeSlider();
 }
 
 void Menu::initTexture() {
@@ -39,6 +41,8 @@ void Menu::initGUI() {
 
 void Menu::render(sf::RenderTarget &target) {
     target.draw(background);
+    buttonPlus->render(target);
+//    volumeSlider->render(target);
     renderGUI(target);
 }
 
@@ -49,6 +53,32 @@ void Menu::setPosition(float x, float y) {
 void Menu::renderGUI(sf::RenderTarget &target) {
     target.draw(headText);
     target.draw(volumeSettingsText);
+}
+
+//void Menu::initVolumeSlider() {
+//    volumeSlider = new VolumeSlider(700.f, 570.f, 200.f, 20.f, 0.f, 100.f);
+//}
+
+Menu::~Menu() {
+//    delete volumeSlider;
+    delete buttonPlus;
+}
+
+void Menu::update(sf::Event event, sf::RenderWindow& window) {
+    //volumeSlider->handleEvent(event, window);
+    if(buttonPlus->handleClickEvent(event,window)){
+        m_volume=10;
+    }
+
+}
+
+float Menu::getVolume() {
+    return m_volume;
+}
+
+void Menu::initButtonPlus() {
+   buttonPlus = new ButtonVolume();
+   buttonPlus->setPosition(780,600);
 }
 
 
