@@ -16,6 +16,7 @@ private:
 
     sf::Sprite worldBackground;
     sf::Texture worldBackgroundTex;
+    sf::Texture endWorldBackgroundTex;
     sf::RenderWindow* window;
     ButtonPlayer* player;
     ButtonStrong* strong;

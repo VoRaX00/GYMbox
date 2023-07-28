@@ -40,7 +40,7 @@ void Game::initWindow() { //инициализация окна
 void Game::initPlayer() { //инициализация игрока
 
     player = new ButtonPlayer();
-    player->setPosition(250,150);
+    player->setPosition(150,0);
 }
 
 void Game::initStrong() { //инициализация кнопки
@@ -96,14 +96,14 @@ void Game::update() { //метод, который отлавливает дей
                 sound.play();
 
             if ((player->points >= strong->price) && (strong->handleClickEvent(event, *window)) && !menuClicked) {
-                    sound.play();
-                    player->points -= strong->price;
-                    strong->price *= 3;
-                    player->power *= 5;
-                    multiplier += 600;
+                sound.play();
+                player->points -= strong->price;
+                strong->price *= 3;
+                player->power *= 500;
+                multiplier += 600;
             }
 
-            if (multiplier == 1800) {
+            if (multiplier == 1800 && level <= 4) {
                 newLevel();
             }
         }
@@ -138,6 +138,10 @@ void Game::initWorld() { //инициализация мира
     if(!worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
         std::cout << "ERROR";
     }
+
+    if(!endWorldBackgroundTex.loadFromFile(R"(images\BackGymD.png)")){
+        std::cout << "ERROR";
+    }
     worldBackground.setTexture(worldBackgroundTex);
 }
 
@@ -149,7 +153,7 @@ void Game::initGUI(){ //инициализация всех текстовых �
     if (!font.loadFromFile(R"(C:\Windows\Fonts\Arial.ttf)"))
         std::cout << "ERROR::GAME::Failed to load font\n";
 
-    pointText.setPosition(700.f, 25.f);
+    pointText.setPosition(900.f, 25.f);
     pointText.setFont(font);
     pointText.setCharacterSize(50);
     pointText.setFillColor(sf::Color::Black);
@@ -161,7 +165,7 @@ void Game::initGUI(){ //инициализация всех текстовых �
     strongText.setFillColor(sf::Color::White);
     strongText.setString("test");
 
-    levelText.setPosition(700.f, 900.f);
+    levelText.setPosition(900.f, 900.f);
     levelText.setFont(font);
     levelText.setCharacterSize(50);
     levelText.setFillColor(sf::Color::Black);
@@ -224,6 +228,12 @@ void Game::renderDefault() { //Базовая отрисовка всей сце
     if(menuClicked){
         menu->render(*window);
     }
+
+    if (level == 5 && multiplier == 1800){
+        worldBackground.setTexture(endWorldBackgroundTex);
+        renderWorld();
+    }
+
     window->display();
 }
 
