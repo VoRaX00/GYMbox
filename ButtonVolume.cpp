@@ -31,6 +31,18 @@ bool ButtonVolume::handleClickEvent(sf::Event event, sf::RenderWindow &window) {
 }
 
 void ButtonVolume::initTexture() {
-    if(!mainTex.loadFromFile(R"(images\plus.png)"))
-        std::cout<<"Error, not found image plus\n";
+    if(typeButton == "plus") {
+        if (!mainTex.loadFromFile(R"(images\plus.png)"))
+            std::cout << "Error, not found image plus\n";
+    }
+    else{
+        if (!mainTex.loadFromFile(R"(images\degree.png)"))
+            std::cout << "Error, not found image plus\n";
+    }
+}
+
+ButtonVolume::ButtonVolume(const std::string &str) {
+    typeButton = str;
+    initTexture();
+    initSprite();
 }

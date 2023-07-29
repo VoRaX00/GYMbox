@@ -1,4 +1,4 @@
- //
+//
 // Created by Alex on 27.07.2023.
 //
 #pragma once
@@ -18,6 +18,7 @@ private:
 
 //    VolumeSlider* volumeSlider;
     ButtonVolume* buttonPlus;
+    ButtonVolume* buttonDegree;
 
     float m_volume=0;
 
@@ -27,13 +28,15 @@ private:
     void initGUI();
     void renderGUI(sf::RenderTarget &target);
 //    void initVolumeSlider();
-    void initButtonPlus();
+    void initButtonVolume();
 
 public:
+    bool click = false;
     Menu();
     ~Menu();
     void render(sf::RenderTarget &target);
     void setPosition(float x, float y);
     void update(sf::Event event, sf::RenderWindow& window);
-    float getVolume();
+    float getVolume() const;
+    void setVolume(const float& value);
 };

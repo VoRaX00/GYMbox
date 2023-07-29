@@ -8,7 +8,7 @@ Menu::Menu(){
     initTexture();
     initSprite();
     initGUI();
-    initButtonPlus();
+    initButtonVolume();
     //initVolumeSlider();
 }
 
@@ -42,6 +42,7 @@ void Menu::initGUI() {
 void Menu::render(sf::RenderTarget &target) {
     target.draw(background);
     buttonPlus->render(target);
+    buttonDegree->render(target);
 //    volumeSlider->render(target);
     renderGUI(target);
 }
@@ -62,23 +63,37 @@ void Menu::renderGUI(sf::RenderTarget &target) {
 Menu::~Menu() {
 //    delete volumeSlider;
     delete buttonPlus;
+    delete buttonDegree;
 }
 
 void Menu::update(sf::Event event, sf::RenderWindow& window) {
     //volumeSlider->handleEvent(event, window);
     if(buttonPlus->handleClickEvent(event,window)){
         m_volume=10;
+        click = true;
+        return;
     }
-
+    else if(buttonDegree->handleClickEvent(event,window)){
+        m_volume=-10;
+        click = true;
+        return;
+    }
+    click = false;
 }
 
-float Menu::getVolume() {
+float Menu::getVolume() const{
     return m_volume;
 }
 
-void Menu::initButtonPlus() {
-   buttonPlus = new ButtonVolume();
-   buttonPlus->setPosition(780,600);
+void Menu::initButtonVolume() {
+    buttonPlus = new ButtonVolume("plus");
+    buttonPlus->setPosition(1000,550);
+    buttonDegree = new ButtonVolume("degree");
+    buttonDegree->setPosition(600, 550);
+}
+
+void Menu::setVolume(const float& value) {
+    m_volume = value;
 }
 
 

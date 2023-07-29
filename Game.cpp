@@ -17,7 +17,6 @@ Game::~Game(){ //Деструктор класса Game, в котором уд�
     delete strong;
     delete start;
     delete buttonMenu;
-    delete menu;
 }
 
 void Game::run() { //запуск игры
@@ -49,7 +48,6 @@ void Game::initStrong() { //инициализация кнопки
 }
 
 void Game::initStart() { //инициализация кнопки старт
-
     start = new ButtonStart();
     start->setPosition(0,50);
 }
@@ -92,10 +90,17 @@ void Game::update() { //метод, который отлавливает дей
             }
 
             if(menuClicked) {
-                menu->update(event, *window);
                 float currentVolume = backgroundMusic.getVolume();
-                float newVolume = (currentVolume+ menu->getVolume()) > 100.f ? 100.f : currentVolume+ menu->getVolume();
-                backgroundMusic.setVolume(newVolume);
+                menu->update(event, *window);
+                if(menu->click) {
+                    float newVolume = (currentVolume + menu->getVolume());
+                    if (newVolume > 100.f) {
+                        newVolume = 100.f;
+                    } else if (newVolume < 0.f) {
+                        newVolume = 0.f;
+                    }
+                    backgroundMusic.setVolume(newVolume);
+                }
             }
             if(!menuClicked)
                 playerClick = player->handleClickEvent(event, *window);
