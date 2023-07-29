@@ -1,6 +1,3 @@
-//
-// Created by Alex on 27.07.2023.
-//
 #include "Menu.h"
 #include <iostream>
 
@@ -33,10 +30,10 @@ void Menu::initGUI() {
     headText.setFillColor(sf::Color::Cyan);
 
     volumeSettingsText.setFont(font);
-    volumeSettingsText.setPosition(700, 450);
+    volumeSettingsText.setPosition(650, 250);
     volumeSettingsText.setCharacterSize(40);
     volumeSettingsText.setString("VOLUME SETTINGS");
-    volumeSettingsText.setFillColor(sf::Color::Magenta);
+    volumeSettingsText.setFillColor(sf::Color::Cyan);
 }
 
 void Menu::render(sf::RenderTarget &target) {
@@ -87,9 +84,9 @@ float Menu::getVolume() const{
 
 void Menu::initButtonVolume() {
     buttonPlus = new ButtonVolume("plus");
-    buttonPlus->setPosition(1000,550);
+    buttonPlus->setPosition(1000,325);
     buttonDegree = new ButtonVolume("degree");
-    buttonDegree->setPosition(600, 550);
+    buttonDegree->setPosition(600, 325);
 }
 
 void Menu::setVolume(const float& value) {

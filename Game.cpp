@@ -111,8 +111,8 @@ void Game::update() { //метод, который отлавливает дей
             if ((player->points >= strong->price) && (strong->handleClickEvent(event, *window)) && !menuClicked) {
                 sound.play();
                 player->points -= strong->price;
-                strong->price *= 3;
-                player->power *= 500;
+                strong->price += level * 20;
+                player->power += level + 1;
                 multiplier += 600;
             }
 
@@ -124,7 +124,6 @@ void Game::update() { //метод, который отлавливает дей
 
     updateGUI();
 }
-
 
 void Game::render() { // отрисовка изображений на окне
     sf::Event event;
@@ -145,7 +144,6 @@ void Game::render() { // отрисовка изображений на окне
         renderDefault();
     }
 }
-
 
 void Game::initWorld() { //инициализация мира
     if(!worldBackgroundTex.loadFromFile(R"(images\BackGym.png)")){
@@ -172,10 +170,10 @@ void Game::initGUI(){ //инициализация всех текстовых �
     pointText.setFillColor(sf::Color::Black);
     pointText.setString("test");
 
-    strongText.setPosition(1250.f, 200.f);
+    strongText.setPosition(1200.f, 200.f);
     strongText.setFont(font);
     strongText.setCharacterSize(30);
-    strongText.setFillColor(sf::Color::White);
+    strongText.setFillColor(sf::Color::Cyan);
     strongText.setString("test");
 
     levelText.setPosition(900.f, 900.f);
@@ -212,7 +210,7 @@ void Game::updateGUI(){ //метод, который изменяет текст
     std::stringstream ssq;
     std::stringstream ssl;
     ss << "POWER: " << player->points;
-    ssq << "STRONG//PRICE: " << strong->price;
+    ssq << "STRONG::POWER: " << strong->price;
     ssl << "LEVEL: " << level;
     pointText.setString(ss.str());
     strongText.setString(ssq.str());
