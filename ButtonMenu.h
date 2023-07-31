@@ -7,6 +7,6 @@ private:
 public:
     ButtonMenu();
     void update() override;
-    void render(sf::RenderTarget& target) override;
+    void render(sf::RenderWindow& target) override;
     bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
 };

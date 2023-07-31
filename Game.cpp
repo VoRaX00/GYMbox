@@ -32,7 +32,6 @@ void Game::run() { //запуск игры
 void Game::initWindow() { //инициализация окна
     window = new sf::RenderWindow (sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "GYMbox/09.03.04", sf::Style::Titlebar | sf::Style::Close);
     window->setFramerateLimit(90);
-    //window->setVerticalSyncEnabled(true);
 }
 
 void Game::initPlayer() { //инициализация игрока
@@ -62,12 +61,16 @@ void Game::initButtonMenu() { //инициализация кнопки меню
 void Game::update() { //метод, который отлавливает действия пользователя
     sf::Event event;
     while(window->pollEvent(event)){
-        if(event.Event::type == sf::Event::Closed){
+
+        if(event.Event::type == sf::Event::Closed)
             window->close();
-        }
-        if(event.Event::key.code == sf::Keyboard::Escape){
+
+        if(event.Event::key.code == sf::Keyboard::Escape)
             window->close();
-        }
+
+        if(theEnd)
+            break;
+
 
         if (!startButtonPressed) {
             if (start->handleClickEvent(event, *window)) {
@@ -94,19 +97,25 @@ void Game::update() { //метод, который отлавливает дей
                 menu->update(event, *window);
                 if(menu->click) {
                     float newVolume = (currentVolume + menu->getVolume());
-                    if (newVolume > 100.f) {
+
+                    if (newVolume > 100.f)
                         newVolume = 100.f;
-                    } else if (newVolume < 0.f) {
+                    else if (newVolume < 0.f)
                         newVolume = 0.f;
+                    else if((int)newVolume%10==9){
+                        newVolume++;
                     }
+
                     backgroundMusic.setVolume(newVolume);
                 }
+                break;
             }
-            if(!menuClicked)
-                playerClick = player->handleClickEvent(event, *window);
+            playerClick = player->handleClickEvent(event, *window);
 
-            if (playerClick)
+            if (playerClick) {
                 sound.play();
+                break;
+            }
 
             if ((player->points >= strong->price) && (strong->handleClickEvent(event, *window)) && !menuClicked) {
                 sound.play();
@@ -131,7 +140,7 @@ void Game::render() { // отрисовка изображений на окне
     if (playerClick) {
         player->resetTexturePressed();
         renderDefault();
-        sf::sleep(sf::seconds(0.1));
+        sf::sleep(sf::seconds(0.14));
         player->resetTextureReleased();
     }
 
@@ -243,6 +252,7 @@ void Game::renderDefault() { //Базовая отрисовка всей сце
     if (level == 5 && multiplier == 1800){
         worldBackground.setTexture(endWorldBackgroundTex);
         renderWorld();
+        theEnd = true;
     }
 
     window->display();

@@ -8,7 +8,7 @@ ButtonVolume::ButtonVolume() {
 
 void ButtonVolume::update() {}
 
-void ButtonVolume::render(sf::RenderTarget &target) {
+void ButtonVolume::render(sf::RenderWindow &target) {
     target.draw(sprite);
 }
 

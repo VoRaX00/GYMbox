@@ -4,7 +4,6 @@
 #pragma once
 #include "string"
 #include "sstream"
-#include "VolumeSlider.h"
 #include "ButtonVolume.h"
 
 class Menu{
@@ -15,13 +14,13 @@ private:
 
     sf::Text headText;
     sf::Text volumeSettingsText;
+    sf::Text percentVolume;
 
 //    VolumeSlider* volumeSlider;
     ButtonVolume* buttonPlus;
     ButtonVolume* buttonDegree;
 
-    float m_volume=0;
-
+    int m_volume=0;
 
     void initTexture(); //инициализация текстуры
     void initSprite(); //инициализация спрайта
@@ -34,9 +33,8 @@ public:
     bool click = false;
     Menu();
     ~Menu();
-    void render(sf::RenderTarget &target);
+    void render(sf::RenderWindow &target);
     void setPosition(float x, float y);
     void update(sf::Event event, sf::RenderWindow& window);
-    float getVolume() const;
-    void setVolume(const float& value);
+    int getVolume() const;
 };

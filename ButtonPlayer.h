@@ -18,7 +18,7 @@ public:
     unsigned points;
     unsigned power;
     void update() override;
-    void render(sf::RenderTarget& target) override;
+    void render(sf::RenderWindow& target) override;
     bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
 
     void setMainTexture(const std::string& path);

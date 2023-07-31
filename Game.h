@@ -30,6 +30,7 @@ private:
 
 
     bool playerClick = false;
+    bool theEnd = false;
 
     sf::Font font;
     sf::Text pointText;
