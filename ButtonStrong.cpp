@@ -16,7 +16,7 @@ void ButtonStrong::initTexture() {
 
 void ButtonStrong::update() {}
 
-void ButtonStrong::render(sf::RenderWindow &target) {
+void ButtonStrong::render(sf::RenderTarget &target) {
     target.draw(sprite);
 }
 

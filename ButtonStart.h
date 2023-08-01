@@ -10,6 +10,6 @@ public:
     ButtonStart();
     ~ButtonStart();
     void update() override;
-    void render(sf::RenderWindow& target) override;
+    void render(sf::RenderTarget& target) override;
     bool handleClickEvent(sf::Event event, sf::RenderWindow& window) override;
 };

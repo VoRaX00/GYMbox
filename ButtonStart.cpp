@@ -17,7 +17,7 @@ void ButtonStart::update() {
 
 }
 
-void ButtonStart::render(sf::RenderWindow &target) {
+void ButtonStart::render(sf::RenderTarget &target) {
     target.draw(sprite);
 }
 

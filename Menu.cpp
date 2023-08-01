@@ -35,7 +35,7 @@ void Menu::initGUI() {
     volumeSettingsText.setFillColor(sf::Color::Cyan);
 }
 
-void Menu::render(sf::RenderWindow &target) {
+void Menu::render(sf::RenderTarget &target) {
     target.draw(background);
     buttonPlus->render(target);
     buttonDegree->render(target);

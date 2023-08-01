@@ -8,7 +8,7 @@ ButtonMenu::ButtonMenu() {
 
 void ButtonMenu::update() {}
 
-void ButtonMenu::render(sf::RenderWindow &target) {
+void ButtonMenu::render(sf::RenderTarget &target) {
     target.draw(sprite);
 }
 

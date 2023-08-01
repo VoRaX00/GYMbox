@@ -33,7 +33,7 @@ public:
     bool click = false;
     Menu();
     ~Menu();
-    void render(sf::RenderWindow &target);
+    void render(sf::RenderTarget &target);
     void setPosition(float x, float y);
     void update(sf::Event event, sf::RenderWindow& window);
     int getVolume() const;

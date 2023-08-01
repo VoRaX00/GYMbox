@@ -24,7 +24,7 @@ void ButtonPlayer::initTexture() {
 
 void ButtonPlayer::update() {}
 
-void ButtonPlayer::render(sf::RenderWindow &target) {
+void ButtonPlayer::render(sf::RenderTarget &target) {
     target.draw(sprite);
 }
 
